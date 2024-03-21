@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+body {
+    margin: 0px;
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 500;
+    background-color: #E8EAF6;
+} 
+
+.container {
+    height: 152px;
+    background: #3949AB;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 8px;
+}
+
+.topic-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.topic-text {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color:#E8EAF6;
+}
+
+.list {
+    display: flex;
+    column-gap: 90px;
+}
+
+li,ul {
+    list-style-type: none;
+}
+
+.link {
+    color: #E8EAF6;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.line {
+    border-bottom: 3px solid #E8EAF6;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+        
+.dropdown-checkbox {
+    display: none; 
+}
+        
+.dropdown-label {
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+}
+        
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+        
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+        
+.dropdown-checkbox:checked + .dropdown-label + .dropdown-content {
+    display: block;
+}
+        
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+        
+.dropdown-label img {
+    cursor: pointer;
+    border: none !important;
+}
+
+/* Header end */
+
+.main {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.input-search {
+    width: 1215px;
+    height: 50px;
+    border-radius: 15px;
+    padding-left: 15px;
+    border: none;
+}
+
+input::placeholder {
+    font-family:  "Saira Semi Condensed", sans-serif;
+    color: #3949ABA6;
+}
+
+.information{
+    display: flex;
+    column-gap: 15px;
+}
+
+.menu-bar {
+    height: 50px;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #3949ABA6;
+    border: none;
+}
+
+.filter {
+    background: #1A237E;
+    color:#E8EAF6;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 600px;
+    margin-top: 15px;
+}
+
+.lines {
+    width: 100vw; 
+    height: 1px; 
+    background-color: black; 
+    position: relative; 
+    left: 50%; 
+    right: 50%; 
+    transform: translateX(-50%); 
+    margin-top: 50px;
+    color: #8F8F8F;
+}
+
+.main-text {
+    color: #1A237E;
+    margin-left: 15px;
+}
+
+.table {
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+}
+
+.products {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: flex-start;
+}
+
+.product {
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+}
+
+.map iframe {
+    display: flex;
+    width: 430px; 
+    height: 580px; 
+    transform: scale(1.5);
+    border: none;
+    border-radius: 30px;
+}
+
+.pngmap {
+    margin-left: 80px;
+    position: relative;
+    margin-top: 150px;
+    padding-inline: 15px;
+} 
+  
+.price {
+    color:#000000;
+    font-weight: bold;
+}
+
+/* .rating {
+    display: inline-block;
+}
+  
+.rating input[type="radio"] {
+    display: none;
+}
+  
+.rating label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+}
+  
+.rating input[type="radio"]:checked ~ label {
+    color: #ffcc00;
+}
+  
+.rating input[type="radio"]:checked ~ label ~ input[type="radio"] ~ label {
+    color: #ccc;
+} */
+
+.rating {
+    display: inline-block;
+  }
+  
+  .rating input[type="radio"] {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .rating input[type="radio"]:nth-child(5):checked ~ label,
+  .rating input[type="radio"]:nth-child(4):checked ~ label,
+  .rating input[type="radio"]:nth-child(3):checked ~ label,
+  .rating input[type="radio"]:nth-child(2):checked ~ label,
+  .rating input[type="radio"]:nth-child(1):checked ~ label {
+    color: #ffcc00;
+  }
+  
+  
+.heart-checkbox {
+    display: none;
+    border: none;
+}
+
+.heart-label {
+    font-size: 48px; 
+    cursor: pointer;
+    display: inline-block;
+    width: 48px; 
+    height: 48px; 
+    line-height: 48px; 
+}
+
+
+.heart-label::before {
+    content: "\2661"; 
+    font-size: 48px; 
+    line-height: 48px; 
+}
+
+
+.heart-checkbox:checked + .heart-label::before {
+    content: "\2764"; 
+    color: red;
+}
+
+
+.saved-button {
+    border: none;       
+    background: none;  
+    padding: 0;         
+    cursor: pointer;   
+}
+
+.saved-button img {
+    display: block;    
+    width: 100%;        
+    height: auto;      
+}
+.saved-button:hover {
+    opacity: 0.8; 
+}
+
+.saved-button:active {
+    opacity: 0.6; 
+}
+
+.address {
+    color: #8F8F8F;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Main end */
+
+
+.foot {
+    height: 475px;
+    background-color: #333333;  
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0;
+    padding: 0;
+    margin-top: 180px;
+}
+
+.logofooter {
+    display: flex;
+    justify-content: center;
+}
+
+.page-text {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    color:#E8EAF6;
+    padding: 5px;
+}
+
+.info {
+    color: #5769D7;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 25px;
+}
+
+.icon {
+    margin-left: 15px;
+    margin-bottom: 170px;
+} 
+
+.site {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0; 
+    color: #8F8F8F;
+}
+
+.site li {
+    display: grid; 
+    margin: 0 60px;
+}
+
+
+.last-line {
+    list-style: none; 
+    padding: 0; 
+    position: relative;
+}
+
+.last-line::after {
+    content: ''; 
+    display: block; 
+    width: 100%; 
+    height: 1px; 
+    background-color: #FFFFFF;
+    position: absolute; 
+    bottom: -50px;
+    left: 0px; 
+}
+
+.number {
+    color: #8F8F8F;
+    font-weight: 400;
+    size: 14px;
+    text-align: center;
+}
